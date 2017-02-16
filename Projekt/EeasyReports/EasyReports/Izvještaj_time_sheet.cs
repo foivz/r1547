@@ -19,10 +19,7 @@ namespace EasyReports
 
         private void Izvještaj_time_sheet_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_1547_DBDataSet2.TimeSheet' table. You can move, or remove it, as needed.
-            this.timeSheetTableAdapter1.Fill(this._1547_DBDataSet2.TimeSheet);
-            // TODO: This line of code loads data into the '_1547_DBDataSet11.TimeSheet' table. You can move, or remove it, as needed.
-            this.timeSheetTableAdapter.Fill(this._1547_DBDataSet11.TimeSheet);
+   
 
         }
     }
