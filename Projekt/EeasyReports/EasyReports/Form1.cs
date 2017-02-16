@@ -21,5 +21,11 @@ namespace EasyReports
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Izvještaj_time_sheet f = new Izvještaj_time_sheet();
+            f.Show();
+        }
     }
 }

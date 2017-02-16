@@ -19,8 +19,18 @@ namespace EasyReports
 
         private void Izvještaj_time_sheet_Load(object sender, EventArgs e)
         {
-   
+            // TODO: This line of code loads data into the 'lokalnaKopijaPodataka.Projekti' table. You can move, or remove it, as needed.
+            this.projektiTableAdapter.Fill(this.lokalnaKopijaPodataka.Projekti);
 
+
+        }
+
+        private void btnOsvjezi_Click(object sender, EventArgs e)
+        {
+            if (cmbProjekti.ValueMember != null)
+            {
+                this.timeSheetTableAdapter.FillByProjMatBr(this.lokalnaKopijaPodataka.TimeSheet, Convert.ToInt32(cmbProjekti.ValueMember), 1);
+            }
         }
     }
 }

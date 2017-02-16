@@ -27,7 +27,7 @@ namespace EasyReports.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=31.147.204.119\\PISERVER,1433;Initial Catalog=1547_DB;Persist Security" +
-            " Info=True;User ID=1547_User")]
+            " Info=True;User ID=1547_User;Password=gF87hZteR")]
         public string _1547_DBConnectionString {
             get {
                 return ((string)(this["_1547_DBConnectionString"]));
