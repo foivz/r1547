@@ -69,7 +69,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(113, 116);
+            this.button1.Location = new System.Drawing.Point(108, 144);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 70);
             this.button1.TabIndex = 5;
@@ -86,7 +86,6 @@
             this.Controls.Add(this.textKorisnik);
             this.Controls.Add(this.lozinka);
             this.Controls.Add(this.korisnik);
-            this.IsMdiContainer = true;
             this.Name = "EasyReports_ulaznaForma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EasyReports - ulazna forma";
