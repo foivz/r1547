@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace EasyReports
 {
-    public partial class EasyReports_ulaznaForma : Form
+    public partial class Time_Sheet : Form
     {
-        public EasyReports_ulaznaForma()
+        public Time_Sheet()
         {
             InitializeComponent();
-        }
-
-        private void EasyReports_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

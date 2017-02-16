@@ -46,14 +46,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Izvještaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izvještaj.Designer.cs">
+      <DependentUpon>Izvještaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izvještaj_time_sheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izvještaj_time_sheet.Designer.cs">
+      <DependentUpon>Izvještaj_time_sheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prijava_i_azuriranje_osoba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prijava_i_azuriranje_osoba.Designer.cs">
+      <DependentUpon>Prijava_i_azuriranje_osoba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prijava_i_ažuriranje_projekata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prijava_i_ažuriranje_projekata.Designer.cs">
+      <DependentUpon>Prijava_i_ažuriranje_projekata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Time_Sheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Time_Sheet.Designer.cs">
+      <DependentUpon>Time_Sheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_1547_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1547_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1547_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1547_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_1547_DBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_1547_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izvještaj.resx">
+      <DependentUpon>Izvještaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izvještaj_time_sheet.resx">
+      <DependentUpon>Izvještaj_time_sheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prijava_i_azuriranje_osoba.resx">
+      <DependentUpon>Prijava_i_azuriranje_osoba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prijava_i_ažuriranje_projekata.resx">
+      <DependentUpon>Prijava_i_ažuriranje_projekata.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +128,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Time_Sheet.resx">
+      <DependentUpon>Time_Sheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -72,6 +151,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_1547_DBDataSet.xsc">
+      <DependentUpon>_1547_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_1547_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1547_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1547_DBDataSet.xss">
+      <DependentUpon>_1547_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_1547_DBDataSet1.xsc">
+      <DependentUpon>_1547_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_1547_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1547_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1547_DBDataSet1.xss">
+      <DependentUpon>_1547_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_1547_DBDataSet2.xsc">
+      <DependentUpon>_1547_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_1547_DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_1547_DBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_1547_DBDataSet2.xss">
+      <DependentUpon>_1547_DBDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace EasyReports
 {
-    public partial class EasyReports_ulaznaForma : Form
+    public partial class Prijava_i_ažuriranje_projekata : Form
     {
-        public EasyReports_ulaznaForma()
+        public Prijava_i_ažuriranje_projekata()
         {
             InitializeComponent();
         }
 
-        private void EasyReports_Load(object sender, EventArgs e)
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
