@@ -46,11 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,21 +84,6 @@
     <Compile Include="Time_Sheet.Designer.cs">
       <DependentUpon>Time_Sheet.cs</DependentUpon>
     </Compile>
-    <Compile Include="_1547_DBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_1547_DBDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_1547_DBDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_1547_DBDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_1547_DBDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_1547_DBDataSet2.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,17 +111,6 @@
     <EmbeddedResource Include="Time_Sheet.resx">
       <DependentUpon>Time_Sheet.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -151,39 +120,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_1547_DBDataSet.xsc">
-      <DependentUpon>_1547_DBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_1547_DBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_1547_DBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_1547_DBDataSet.xss">
-      <DependentUpon>_1547_DBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_1547_DBDataSet1.xsc">
-      <DependentUpon>_1547_DBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="_1547_DBDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_1547_DBDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_1547_DBDataSet1.xss">
-      <DependentUpon>_1547_DBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="_1547_DBDataSet2.xsc">
-      <DependentUpon>_1547_DBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="_1547_DBDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_1547_DBDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_1547_DBDataSet2.xss">
-      <DependentUpon>_1547_DBDataSet2.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

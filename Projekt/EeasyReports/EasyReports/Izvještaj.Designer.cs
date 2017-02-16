@@ -31,9 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._1547_DBDataSet = new EasyReports._1547_DBDataSet();
             this.planizvrsenjaprojektaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.plan_izvrsenja_projektaTableAdapter = new EasyReports._1547_DBDataSetTableAdapters.Plan_izvrsenja_projektaTableAdapter();
             this.godinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mjesecDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sifraprojektaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,7 +40,6 @@
             this.statusprDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._1547_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.planizvrsenjaprojektaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,20 +64,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(642, 150);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // _1547_DBDataSet
-            // 
-            this._1547_DBDataSet.DataSetName = "_1547_DBDataSet";
-            this._1547_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // planizvrsenjaprojektaBindingSource
-            // 
-            this.planizvrsenjaprojektaBindingSource.DataMember = "Plan_izvrsenja_projekta";
-            this.planizvrsenjaprojektaBindingSource.DataSource = this._1547_DBDataSet;
-            // 
-            // plan_izvrsenja_projektaTableAdapter
-            // 
-            this.plan_izvrsenja_projektaTableAdapter.ClearBeforeFill = true;
             // 
             // godinaDataGridViewTextBoxColumn
             // 
@@ -130,7 +113,6 @@
             this.Load += new System.EventHandler(this.Izvještaj_Load);
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._1547_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.planizvrsenjaprojektaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -140,9 +122,7 @@
 
         private System.Diagnostics.EventLog eventLog1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private _1547_DBDataSet _1547_DBDataSet;
         private System.Windows.Forms.BindingSource planizvrsenjaprojektaBindingSource;
-        private _1547_DBDataSetTableAdapters.Plan_izvrsenja_projektaTableAdapter plan_izvrsenja_projektaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn godinaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mjesecDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sifraprojektaDataGridViewTextBoxColumn;
