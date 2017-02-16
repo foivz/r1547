@@ -27,9 +27,9 @@ namespace EasyReports
 
         private void btnOsvjezi_Click(object sender, EventArgs e)
         {
-            if (cmbProjekti.ValueMember != null)
+            if (cmbProjekti.SelectedValue != null)
             {
-                this.timeSheetTableAdapter.FillByProjMatBr(this.lokalnaKopijaPodataka.TimeSheet, Convert.ToInt32(cmbProjekti.ValueMember), 1);
+                this.timeSheetTableAdapter.FillByProjMatBr(this.lokalnaKopijaPodataka.TimeSheet, Convert.ToInt32(cmbProjekti.SelectedValue), 1);
             }
         }
     }
