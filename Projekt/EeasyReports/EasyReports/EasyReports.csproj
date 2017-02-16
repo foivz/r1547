@@ -64,6 +64,11 @@
     <Compile Include="Izvještaj_time_sheet.Designer.cs">
       <DependentUpon>Izvještaj_time_sheet.cs</DependentUpon>
     </Compile>
+    <Compile Include="LokalnaKopijaPodataka.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LokalnaKopijaPodataka.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Prijava_i_azuriranje_osoba.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +116,17 @@
     <EmbeddedResource Include="Time_Sheet.resx">
       <DependentUpon>Time_Sheet.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="LokalnaKopijaPodataka.xsc">
+      <DependentUpon>LokalnaKopijaPodataka.xsd</DependentUpon>
+    </None>
+    <None Include="LokalnaKopijaPodataka.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LokalnaKopijaPodataka.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="LokalnaKopijaPodataka.xss">
+      <DependentUpon>LokalnaKopijaPodataka.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
