@@ -64,6 +64,9 @@
     <Compile Include="Izvještaj_time_sheet.Designer.cs">
       <DependentUpon>Izvještaj_time_sheet.cs</DependentUpon>
     </Compile>
+    <Compile Include="LokalnaKopijaPodataka.cs">
+      <DependentUpon>LokalnaKopijaPodataka.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LokalnaKopijaPodataka.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

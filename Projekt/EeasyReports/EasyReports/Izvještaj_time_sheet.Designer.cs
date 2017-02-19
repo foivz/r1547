@@ -30,22 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lokalnaKopijaPodataka = new EasyReports.LokalnaKopijaPodataka();
-            this.timeSheetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.timeSheetTableAdapter = new EasyReports.LokalnaKopijaPodatakaTableAdapters.TimeSheetTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sifraprojektaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.matbrDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.opisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumivrijemeodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumivrijemedoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeSheetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lokalnaKopijaPodataka = new EasyReports.LokalnaKopijaPodataka();
+            this.timeSheetTableAdapter = new EasyReports.LokalnaKopijaPodatakaTableAdapters.TimeSheetTableAdapter();
             this.cmbProjekti = new System.Windows.Forms.ComboBox();
             this.projektiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projektiTableAdapter = new EasyReports.LokalnaKopijaPodatakaTableAdapters.ProjektiTableAdapter();
             this.btnOsvjezi = new System.Windows.Forms.Button();
+            this.cmbOsobe = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lokalnaKopijaPodataka)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeSheetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lokalnaKopijaPodataka)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projektiBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,20 +66,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(714, 252);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // lokalnaKopijaPodataka
-            // 
-            this.lokalnaKopijaPodataka.DataSetName = "LokalnaKopijaPodataka";
-            this.lokalnaKopijaPodataka.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // timeSheetBindingSource
-            // 
-            this.timeSheetBindingSource.DataMember = "TimeSheet";
-            this.timeSheetBindingSource.DataSource = this.lokalnaKopijaPodataka;
-            // 
-            // timeSheetTableAdapter
-            // 
-            this.timeSheetTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -116,6 +103,20 @@
             this.datumivrijemedoDataGridViewTextBoxColumn.HeaderText = "datum_i_vrijeme_do";
             this.datumivrijemedoDataGridViewTextBoxColumn.Name = "datumivrijemedoDataGridViewTextBoxColumn";
             // 
+            // timeSheetBindingSource
+            // 
+            this.timeSheetBindingSource.DataMember = "TimeSheet";
+            this.timeSheetBindingSource.DataSource = this.lokalnaKopijaPodataka;
+            // 
+            // lokalnaKopijaPodataka
+            // 
+            this.lokalnaKopijaPodataka.DataSetName = "LokalnaKopijaPodataka";
+            this.lokalnaKopijaPodataka.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // timeSheetTableAdapter
+            // 
+            this.timeSheetTableAdapter.ClearBeforeFill = true;
+            // 
             // cmbProjekti
             // 
             this.cmbProjekti.DataSource = this.projektiBindingSource;
@@ -146,11 +147,23 @@
             this.btnOsvjezi.UseVisualStyleBackColor = true;
             this.btnOsvjezi.Click += new System.EventHandler(this.btnOsvjezi_Click);
             // 
+            // cmbOsobe
+            // 
+            this.cmbOsobe.DataSource = this.projektiBindingSource;
+            this.cmbOsobe.DisplayMember = "naziv_projekta";
+            this.cmbOsobe.FormattingEnabled = true;
+            this.cmbOsobe.Location = new System.Drawing.Point(366, 23);
+            this.cmbOsobe.Name = "cmbOsobe";
+            this.cmbOsobe.Size = new System.Drawing.Size(245, 21);
+            this.cmbOsobe.TabIndex = 3;
+            this.cmbOsobe.ValueMember = "sifra_projekta";
+            // 
             // Izvještaj_time_sheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 323);
+            this.Controls.Add(this.cmbOsobe);
             this.Controls.Add(this.btnOsvjezi);
             this.Controls.Add(this.cmbProjekti);
             this.Controls.Add(this.dataGridView1);
@@ -158,8 +171,8 @@
             this.Text = "Izvještaj_time_sheet";
             this.Load += new System.EventHandler(this.Izvještaj_time_sheet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lokalnaKopijaPodataka)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeSheetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lokalnaKopijaPodataka)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projektiBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -179,6 +192,8 @@
         private System.Windows.Forms.ComboBox cmbProjekti;
         private System.Windows.Forms.BindingSource projektiBindingSource;
         private LokalnaKopijaPodatakaTableAdapters.ProjektiTableAdapter projektiTableAdapter;
+        private LokalnaKopijaPodatakaTableAdapters.OsobeTableAdapter osobeTableAdapter;
         private System.Windows.Forms.Button btnOsvjezi;
+        private System.Windows.Forms.ComboBox cmbOsobe;
     }
 }
