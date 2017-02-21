@@ -44,10 +44,13 @@
             this.projektiTableAdapter = new EasyReports.LokalnaKopijaPodatakaTableAdapters.ProjektiTableAdapter();
             this.btnOsvjezi = new System.Windows.Forms.Button();
             this.cmbOsobe = new System.Windows.Forms.ComboBox();
+            this.osobeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.osobeTableAdapter1 = new EasyReports.LokalnaKopijaPodatakaTableAdapters.OsobeTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeSheetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lokalnaKopijaPodataka)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projektiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.osobeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -149,14 +152,23 @@
             // 
             // cmbOsobe
             // 
-            this.cmbOsobe.DataSource = this.projektiBindingSource;
-            this.cmbOsobe.DisplayMember = "naziv_projekta";
+            this.cmbOsobe.DataSource = this.osobeBindingSource;
+            this.cmbOsobe.DisplayMember = "prezime_i_ime";
             this.cmbOsobe.FormattingEnabled = true;
             this.cmbOsobe.Location = new System.Drawing.Point(366, 23);
             this.cmbOsobe.Name = "cmbOsobe";
             this.cmbOsobe.Size = new System.Drawing.Size(245, 21);
             this.cmbOsobe.TabIndex = 3;
-            this.cmbOsobe.ValueMember = "sifra_projekta";
+            this.cmbOsobe.ValueMember = "mat_br";
+            // 
+            // osobeBindingSource
+            // 
+            this.osobeBindingSource.DataMember = "Osobe";
+            this.osobeBindingSource.DataSource = this.lokalnaKopijaPodataka;
+            // 
+            // osobeTableAdapter1
+            // 
+            this.osobeTableAdapter1.ClearBeforeFill = true;
             // 
             // Izvještaj_time_sheet
             // 
@@ -174,6 +186,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.timeSheetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lokalnaKopijaPodataka)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projektiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.osobeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,5 +208,7 @@
         private LokalnaKopijaPodatakaTableAdapters.OsobeTableAdapter osobeTableAdapter;
         private System.Windows.Forms.Button btnOsvjezi;
         private System.Windows.Forms.ComboBox cmbOsobe;
+        private System.Windows.Forms.BindingSource osobeBindingSource;
+        private LokalnaKopijaPodatakaTableAdapters.OsobeTableAdapter osobeTableAdapter1;
     }
 }

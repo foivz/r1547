@@ -19,6 +19,8 @@ namespace EasyReports
 
         private void Izvještaj_time_sheet_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'lokalnaKopijaPodataka.Osobe' table. You can move, or remove it, as needed.
+            this.osobeTableAdapter1.Fill(this.lokalnaKopijaPodataka.Osobe);
             // TODO: This line of code loads data into the 'lokalnaKopijaPodataka.Projekti' table. You can move, or remove it, as needed.
             projektiTableAdapter.Fill(lokalnaKopijaPodataka.Projekti);
           
